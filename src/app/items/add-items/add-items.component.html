@@ -1,1 +1,23 @@
-<p>add-items works!</p>
+<form [formGroup]="addItemForm" (ngSubmit)="addItem()">
+    <h1>Add Item</h1>
+    <input
+      type="text"
+      formControlName="id"
+      class="input"
+      placeholder="id"
+    />
+    <br />
+    <input
+      type="text"
+      formControlName="itemName"
+      class="input"
+      placeholder="itemname"
+    /><br />
+    <input
+      type="text"
+      formControlName="itemPrice"
+      class="input"
+      placeholder="item price"
+    /><br />
+    <button class="btn">Register</button>
+  </form>

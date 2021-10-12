@@ -3,8 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 export interface item {
   id: Number;
-  itemname: string;
-  itemprice: string;
+  itemName: string;
+  itemPrice: string;
 }
 
 @Injectable()
@@ -16,4 +16,7 @@ export class ItemService {
     return this.http.get<item>('https://abhiram-api-rest.herokuapp.com/items');
   }
 
+  addItems(data: item){
+  return this.http.post('https://abhiram-api-rest.herokuapp.com/items', data);
+  }
 }
