@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   constructor( private _router: Router,
     private authservice: AuthService,
-    private formBuilder: FormBuilder) { }
+    private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {}
   loginForm = this.formBuilder.group({
@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
       )
     ) {
       console.log('success');
-      this._router.navigate(['../items']);
+      this._router.navigate(['../items/view-items']);
     } else {
       this._router.navigate(['']);
     }
