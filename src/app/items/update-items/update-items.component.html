@@ -1,4 +1,6 @@
-<form [formGroup]="editItemForm" (ngSubmit)="editItem()">
+<div class="home">
+  <div class="box">
+  <form [formGroup]="editItemForm" (ngSubmit)="editItem()" class="inputform">
 
     <input
       type="text"
@@ -19,5 +21,7 @@
       class="input"
       placeholder="item price"
     /><br />
-    <button class="btn">Update</button>
+    <button class="updtbtn">Update</button>
   </form>
+  </div>
+</div>

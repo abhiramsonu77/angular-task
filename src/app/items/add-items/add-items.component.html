@@ -1,4 +1,6 @@
-<form [formGroup]="addItemForm" (ngSubmit)="addItem()">
+<div class="home">
+  <div class="box">
+<form [formGroup]="addItemForm" (ngSubmit)="addItem()" class="inputform">
     <h1>Add Item</h1>
     <input
       type="text"
@@ -19,5 +21,7 @@
       class="input"
       placeholder="item price"
     /><br />
-    <button class="btn">Register</button>
+    <button class="addbtn">Add</button>
   </form>
+  </div>
+</div>

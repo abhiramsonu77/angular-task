@@ -1,9 +1,12 @@
-<div>
-<table border="1">
+<div class="home">
+  <div>
+<table class="viewtable">
     <tr>
       <td>id</td>
       <td>item name</td>
       <td>item price</td>
+      <td></td>
+      <td></td>
     </tr>
     <tr *ngFor="let item of items">
       <td>
@@ -15,11 +18,11 @@
       <td>
         {{ item.itemPrice }}
       </td>
-      <td><button (click)="deleteItem(item.id)">delete</button></td>
-      <td><button routerLink="../update-items/{{ item.id }}">Update</button></td>
+      <td><button (click)="deleteItem(item.id)" class="dltbtn">delete</button></td>
+      <td><button routerLink="../update-items/{{ item.id }}" class="updtbtn">Update</button></td>
     </tr>
+    <caption style="caption-side:bottom">Want to add new Item 
+      <button routerLink="../add-items" class="addbtn">Add item</button></caption>
   </table>
-  <div>Want to add new Item 
-      <button routerLink="../add-items">Add item</button>
   </div>
 </div>

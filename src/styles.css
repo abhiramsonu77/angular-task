@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cairo', sans-serif;
+}
+.box{
+    width: 60%;
+	height: 60vh;
+	position: absolute;
+	top: 20%;
+	display: flex;
+	flex-direction: row;
+	border-radius: 6px;
+
+    -webkit-box-shadow: -1px 4px 10px 11px rgba(0, 0, 0, 0.411);
+	-moz-box-shadow: -1px 4px 10px 11px rgba(0, 0, 0, 0.411);
+	box-shadow: -1px 4px 10px 11px rgba(0, 0, 0, 0.411);
+}
+.inputform{
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.input{
+    border: #ccc 0.06rem solid;
+	border-bottom: #ccc 0.125 solid;
+	padding: 0.6rem;
+
+	margin-top: 0.425rem;
+	font-size: 1em;
+	border-radius: 0.25rem;
+}
+
+

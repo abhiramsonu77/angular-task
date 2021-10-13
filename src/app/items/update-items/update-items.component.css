@@ -1,0 +1,19 @@
+.updtbtn{
+    background: rgb(141, 214, 73);
+	width: 7.813rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	color: Black;
+	border-radius: 4px;
+	border: rgb(45, 48, 48) 1px solid;
+
+	margin-top: 20px;
+
+	font-weight: 800;
+	font-size: 1.2em;
+    font-family: 'Cairo', sans-serif;
+}
+.updtbtn:hover{
+    background: rgb(77, 117, 39);
+    color: whitesmoke;
+}

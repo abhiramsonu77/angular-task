@@ -1,0 +1,16 @@
+.dash {
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+    padding-right: 6%;
+  }
+.logout{
+    background-color: tomato;
+    border-radius: 25%;
+    border: 4px;
+    font-family: 'Cairo', sans-serif;
+}
+.logout:hover{
+    background-color: rgb(160, 24, 0);
+    color: aliceblue
+}
