@@ -20,7 +20,7 @@ const routes: Routes =[
             },
       
             {
-              path: 'update-items',
+              path: 'update-items/:id',
               component: UpdateItemsComponent,
             },
             {

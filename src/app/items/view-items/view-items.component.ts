@@ -11,20 +11,16 @@ export class ViewItemsComponent implements OnInit {
   constructor(private itemService: ItemService) {}
   items: any;
 
-  getPosts() {
+  getItemList() {
     this.itemService.getItems().subscribe(
       (data) => {
         this.items = data;
         console.log(this.items);
       },
-      (error) => {
-        console.log('error', error);
-      }
     );
   }
   ngOnInit(): void {
-    this.getPosts();
+    this.getItemList();
   }
-
 
 }

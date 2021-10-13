@@ -19,4 +19,15 @@ export class ItemService {
   addItems(data: item){
   return this.http.post('https://abhiram-api-rest.herokuapp.com/items', data);
   }
+
+  getCurrentItem(id: Number) {
+    return this.http.get('https://abhiram-api-rest.herokuapp.com/items/' + id);
+  }
+
+  updateItem(id: Number, data: item) {
+    return this.http.patch(
+      'https://abhiram-api-rest.herokuapp.com/items/' + id,
+      data
+    );
+  }
 }
