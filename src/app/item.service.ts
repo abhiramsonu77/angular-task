@@ -25,9 +25,10 @@ export class ItemService {
   }
 
   updateItem(id: Number, data: item) {
-    return this.http.patch(
-      'https://abhiram-api-rest.herokuapp.com/items/' + id,
-      data
-    );
+    return this.http.patch('https://abhiram-api-rest.herokuapp.com/items/' + id, data);
+  }
+
+  deleteItem(id: Number) {
+    return this.http.delete('https://abhiram-api-rest.herokuapp.com/items/' + id);
   }
 }

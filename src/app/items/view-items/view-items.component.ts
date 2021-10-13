@@ -1,3 +1,4 @@
+import { ResourceLoader } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { ItemService } from 'src/app/item.service';
 
@@ -22,5 +23,15 @@ export class ViewItemsComponent implements OnInit {
   ngOnInit(): void {
     this.getItemList();
   }
+  deleteItem(id: number) {
+    this.itemService.deleteItem(id).subscribe(
+      (deletedData) => {},
+      (error) => {
+        console.log(error);
+      }
+    );
 
+    this.getItemList();
+    console.log(this.getItemList());
+  }
 }

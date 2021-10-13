@@ -15,7 +15,7 @@
       <td>
         {{ item.itemPrice }}
       </td>
-      <td><button>delete</button></td>
+      <td><button (click)="deleteItem(item.id)">delete</button></td>
       <td><button routerLink="../update-items/{{ item.id }}">Update</button></td>
     </tr>
   </table>
