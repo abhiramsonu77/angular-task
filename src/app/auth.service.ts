@@ -5,12 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
   user ={
-    username:'admin',
+    email:'admin@test.com',
     password:'password'
   }
   constructor() { }
-  login(username: string, password: string) {
-    if(this.user.username == username && this.user.password == password) {
+  login(email: string, password: string) {
+    if(this.user.email == email && this.user.password == password) {
       localStorage.setItem('currentuser', 'loggedin');
       return true;
     }

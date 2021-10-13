@@ -3,19 +3,26 @@
       <form [formGroup]="loginForm" (ngSubmit)="adminLogin()" class="loginform">
         <h2>Login Form</h2>
         <input
-          type="text"
-          formControlName="username"
-          placeholder="username"
+          type="email"
+          formControlName="emailid"
+          placeholder="Email Id"
           class="input"
         />
         <br />
+        <div style="color :red" *ngIf="emailid && emailid.invalid && emailid.touched">
+          *Email not valid. Please enter valid email
+        </div> 
         <input
           type="password"
           formControlName="password"
           placeholder="password"
           class="input"
         /><br />
-        <button class="logbtn">Login</button>
+        <div style="color :red" *ngIf="password && password.invalid && password.touched">
+          *Incorrect password.
+        </div>
+        <button class="logbtn" [disabled]="loginForm.invalid">Login</button>
+        <div style="color: red;">{{ showMsg }}</div>
       </form>
     </div>
   </div>
